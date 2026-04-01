@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Maklumat Pelajar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sistem Maklumat Pelajar</h1>
+</header>
+
+<nav>
+    <button onclick="showSection('home')">Utama</button>
+    <button onclick="showSection('pelajar')">Senarai Pelajar</button>
+    <button onclick="showSection('daftar')">Daftar Pelajar</button>
+</nav>
+
+<!-- HALAMAN UTAMA -->
+<section id="home">
+    <h2>Tentang</h2>
+    <p>Sistem ini memaparkan maklumat pelajar.</p>
+
+    <h2>Hubungi Kami</h2>
+    <p>Email: admin@sistem.com</p>
+</section>
+
+<!-- SENARAI PELAJAR -->
+<section id="pelajar" style="display:none;">
+    <h2>Senarai Pelajar</h2>
+    <div id="dataPelajar"></div>
+</section>
+
+<!-- DAFTAR PELAJAR -->
+<section id="daftar" style="display:none;">
+    <h2>Daftar Pelajar</h2>
+    <form id="formDaftar">
+        <input type="text" id="namaDaftar" placeholder="Nama" required>
+        <input type="email" id="emailDaftar" placeholder="Email" required>
+        <button type="submit">Daftar</button>
+    </form>
+    <div id="message"></div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
